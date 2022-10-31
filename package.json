@@ -1,0 +1,61 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "raycast-typefully-extension",
+  "title": "Typefully",
+  "description": "raycast extension for Typefully",
+  "icon": "favicon.ico",
+  "author": "kandros",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "drafts",
+      "title": "Drafts",
+      "description": "List of draft threads",
+      "mode": "view"
+    },
+    {
+      "name": "open-typefully-website",
+      "title": "Open Typefully",
+      "description": "",
+      "mode": "no-view"
+    },
+    {
+      "name": "open-threads-menubar",
+      "title": "Run Typefully Threads drafts Menubar",
+      "description": "open threads",
+      "mode": "menu-bar",
+      "subtitle": "",
+      "icon": "favicon.ico"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "typefullyToken",
+      "title": "typefullyToken",
+      "description": "typefullyToken",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.42.1",
+    "@raycast/utils": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
